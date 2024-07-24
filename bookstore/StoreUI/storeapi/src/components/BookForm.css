@@ -1,0 +1,48 @@
+.book-form {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px; 
+  background-color: rgb(190, 161, 124); 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.book-form form {
+  display: flex; 
+  flex-direction: column; 
+  gap: 10px; 
+}
+
+.book-form input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.book-form button {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #3a1e08;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.book-form button:hover {
+  background-color: #271406;
+}
+
+/* Hide the close button by default */
+.book-form .close-button {
+  display: none;
+}
+
+/* Show the close button only on mobile screens */
+@media (max-width: 767px) {
+  .book-form .close-button {
+    display: block;
+  }
+}
